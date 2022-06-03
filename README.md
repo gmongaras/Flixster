@@ -26,9 +26,9 @@ The following **additional** features are implemented:
 
 * [ ] List anything else that you can get done to improve the app functionality!
 
-## Video Walkthrough
+## Video Demo
 
-Here's a walkthrough of implemented user stories:
+Here's a demo of implemented user stories:
 
 <img src='https://github.com/gmongaras/Flixster/blob/master/Demo.gif' title='Demo' width='' alt='Demo' />
 
