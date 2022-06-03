@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Flixter"
         tools:targetApi="31">
         <activity
+            android:name=".MovieTrailerActivity"
+            android:exported="false" />
+        <activity
             android:name=".MovieDetailsActivity"
             android:exported="false" />
         <activity
@@ -28,5 +31,11 @@
             </intent-filter>
         </activity>
     </application>
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
 
 </manifest>
