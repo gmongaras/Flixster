@@ -11,6 +11,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.target.Target;
 
 import org.parceler.Parcels;
@@ -56,7 +57,8 @@ public class MovieDetailsActivity extends AppCompatActivity {
         Glide.with(int_ivPoster)
                 .load(imageURL)
                 .placeholder(Drawable.createFromPath(placeHolder))
-                .override(Target.SIZE_ORIGINAL/2, Target.SIZE_ORIGINAL/3)
+                .override(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
+                .transform(new RoundedCorners(40))
                 .into(int_ivPoster);
     }
 }
